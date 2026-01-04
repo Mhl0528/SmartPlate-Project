@@ -9,7 +9,7 @@ st.set_page_config(page_title="SmartPlate AI", page_icon="🥗", layout="wide")
 
 # --- 这里填入你的 API KEY ---
 # 您上传文件中的 Key 保留在此 (注意: 为了安全，演示时请小心)
-client = OpenAI(api_key="st.secrets["OPENAI_API_KEY"]") 
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"]) 
 
 # --- 侧边栏导航 (美化版) ---
 with st.sidebar:
@@ -463,3 +463,4 @@ elif page == "📞 联系我们":
         st.write("负责: UI/UX 设计、商业文档")
 
         st.markdown("👩‍🎨 *Product Manager*")
+
